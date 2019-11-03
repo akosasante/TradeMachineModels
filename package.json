@@ -6,13 +6,14 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "test-local": "jest --config jestconfig.json --detectOpenHandles --runInBand --forceExit --verbose true --notify true --collectCoverage true",
+    "test-watch": "npm run test-local -- --watch",
     "build": "tsc",
     "build-watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json -t stylish",
     "lint-format": "tslint -c tslint.json -p tsconfig.json -t stylish --fix",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
     "version": "npm run lint-format && git add -A src",
     "postversion": "git push && git push --tags"
   },
@@ -28,14 +29,17 @@
   "homepage": "https://github.com/akosasante/TradeMachineModels#readme",
   "devDependencies": {
     "@types/jest": "^24.0.21",
+    "@types/uuid": "^3.4.6",
     "jest": "^24.9.0",
     "jest-extended": "^0.11.2",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "uuid": "^3.3.3"
   },
   "files": [
     "lib/**/*"
   ],
-  "private": true
+  "private": true,
+  "dependencies": {}
 }
