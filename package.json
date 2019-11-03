@@ -1,0 +1,19 @@
+{
+  "name": "trade-machine-models",
+  "version": "1.0.0",
+  "description": "Domain models for trade-machine-server and trade-machine-client",
+  "main": "''",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akosasante/TradeMachineModels.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akosasante/TradeMachineModels/issues"
+  },
+  "homepage": "https://github.com/akosasante/TradeMachineModels#readme"
+}
