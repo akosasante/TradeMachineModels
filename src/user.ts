@@ -9,7 +9,7 @@ export default class User {
         public displayName: string,
         public email: string,
         public role: Role = 'owner',
-        public status: UserStatus = 'inactive',
+        public status: UserStatus = 'active',
         public slackUsername?: string,
         public lastLoggedIn?: Date
     ) {

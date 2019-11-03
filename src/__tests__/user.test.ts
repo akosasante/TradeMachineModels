@@ -11,6 +11,7 @@ describe('User model', () => {
         adminUser = createAdminUser()
         ownerUser = createOwnerUser()
     })
+
     describe('roles', () => {
         it('isAdmin/0 - should return true if the user has the role "admin", false otherwise', () => {
             expect(adminUser.isAdmin()).toBeTrue()
