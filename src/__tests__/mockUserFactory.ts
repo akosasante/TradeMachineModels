@@ -1,5 +1,5 @@
-import { getId } from '../sharedTestFunctions';
 import User from '../user';
+import { getId } from './sharedTestFunctions';
 
 const GENERIC_PASSWORD = 'roflpass';
 const ADMIN_EMAIL = 'admin@example.com';
