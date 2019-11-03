@@ -1,6 +1,6 @@
 export type DraftPickType = 'majors' | 'high_minors' | 'low_minors'
 
-function draftPickTypeToDisplay(type: DraftPickType): string {
+export function draftPickTypeToDisplay(type: DraftPickType): string {
     switch (type) {
         case 'high_minors':
             return 'High Minors'
