@@ -1,18 +1,19 @@
+import { name } from 'faker'
 import MajorLeaguePlayer from '../../majorLeaguePlayer';
 import MinorLeaguePlayer from '../../minorLeaguePlayer';
 import { getId } from '../sharedTestFunctions';
 
-const MAJOR_NAME = 'Edwin Encarnacion'
-const MINOR_NAME = 'Blake Snell'
+const MAJOR_NAME = `${name.findName()}`
+const MINOR_NAME = `${name.findName()}`
 const MAJOR_META = {
-    first_name: 'Edwin',
-    last_name: 'Encarnacion',
+    first_name: `${MAJOR_NAME.split(' ')[0]}`,
+    last_name: `${MAJOR_NAME.split(' ')[2]}`,
     position: '3B',
     team: 'NYY',
 }
 const MINOR_META = {
-    first_name: 'Blake',
-    last_name: 'Snell',
+    first_name: `${MINOR_NAME.split(' ')[0]}`,
+    last_name: `${MINOR_NAME.split(' ')[2]}`,
     position: 'P',
     team: 'TBR',
 }
