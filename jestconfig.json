@@ -1,0 +1,11 @@
+{
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
+  "moduleFileExtensions": ["ts", "json", "node", "js"],
+  "coverageDirectory": "src/__tests__/coverage",
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": ["jest-extended"],
+  "verbose": false
+}

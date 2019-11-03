@@ -4,7 +4,12 @@
   "description": "Domain models for trade-machine-server and trade-machine-client",
   "main": "''",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json",
+    "test-local": "jest --config jestconfig.json --detectOpenHandles --runInBand --forceExit --verbose true --notify true --collectCoverage true",
+    "build": "tsc",
+    "build-watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json -t stylish",
+    "lint-format": "tslint -c tslint.json -p tsconfig.json -t stylish --fix"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/akosasante/TradeMachineModels/issues"
   },
-  "homepage": "https://github.com/akosasante/TradeMachineModels#readme"
+  "homepage": "https://github.com/akosasante/TradeMachineModels#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.21",
+    "jest": "^24.9.0",
+    "jest-extended": "^0.11.2",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
