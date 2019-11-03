@@ -18,6 +18,6 @@ export default class Trade {
         const senderName = this.sender.name
         const recipientNames = this.recipients.map(t => t.name).join(', ')
         const tradedNum = this.tradedPlayers.length + this.tradedProspects.length + this.tradedPicks.length
-        return `Trade: Requested by: ${senderName} - With: ${recipientNames} - ${tradedNum} entities (${this.id})`;
+        return `Trade: Requested by: ${senderName} - With: ${recipientNames} - ${tradedNum} entitie(s) (${this.id})`;
     }
 }

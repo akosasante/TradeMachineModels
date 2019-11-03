@@ -1,7 +1,7 @@
 import 'jest'
 import 'jest-extended'
 import DraftPick, { draftPickTypeToDisplay } from '../draftPick';
-import { createDraftPick } from './mockDraftPickFactory';
+import { createDraftPick } from './mocks and factories/mockDraftPickFactory';
 
 describe('Draft Pick model', () => {
     let draftPick: DraftPick

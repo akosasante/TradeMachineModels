@@ -1,5 +1,5 @@
-import Team from '../team';
-import { getId } from './sharedTestFunctions';
+import Team from '../../team';
+import { getId } from '../sharedTestFunctions';
 
 const TEAM_NAME = 'Dugtrio Den'
 

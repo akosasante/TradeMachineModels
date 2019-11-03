@@ -1,5 +1,5 @@
-import DraftPick from '../draftPick';
-import { getId } from './sharedTestFunctions';
+import DraftPick from '../../draftPick';
+import { getId } from '../sharedTestFunctions';
 
 const DRAFT_PICK_SEASON = 2019
 const DRAFT_PICK_ROUND = 1

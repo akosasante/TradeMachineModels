@@ -1,7 +1,7 @@
 import 'jest'
 import 'jest-extended'
 import Team from '../team';
-import { createEspnTeam } from './mockTeamFactory';
+import { createEspnTeam } from './mocks and factories/mockTeamFactory';
 
 describe('Team model', () => {
     let espnTeam: Team

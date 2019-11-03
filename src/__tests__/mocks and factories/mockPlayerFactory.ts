@@ -1,6 +1,6 @@
-import MajorLeaguePlayer from '../majorLeaguePlayer';
-import MinorLeaguePlayer from '../minorLeaguePlayer';
-import { getId } from './sharedTestFunctions';
+import MajorLeaguePlayer from '../../majorLeaguePlayer';
+import MinorLeaguePlayer from '../../minorLeaguePlayer';
+import { getId } from '../sharedTestFunctions';
 
 const MAJOR_NAME = 'Edwin Encarnacion'
 const MINOR_NAME = 'Blake Snell'
