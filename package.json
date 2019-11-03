@@ -9,7 +9,12 @@
     "build": "tsc",
     "build-watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json -t stylish",
-    "lint-format": "tslint -c tslint.json -p tsconfig.json -t stylish --fix"
+    "lint-format": "tslint -c tslint.json -p tsconfig.json -t stylish --fix",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version": "npm run lint-format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -31,5 +36,6 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "private": true
 }
