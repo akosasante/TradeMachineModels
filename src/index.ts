@@ -8,12 +8,12 @@ import TradeItem from './tradeItem'
 import User from './user'
 
 export default {
-    UserModel: User,
-    TradeModel: Trade,
-    TradeItemModel: TradeItem,
-    TeamModel: Team,
-    PlayerModel: Player,
-    MinorLeaguePlayerModel: MinorLeaguePlayer,
-    MajorLeaguePlayerModel: MajorLeaguePlayer,
-    DraftPickModel: DraftPick,
+    User,
+    Trade,
+    TradeItem,
+    Team,
+    Player,
+    MinorLeaguePlayer,
+    MajorLeaguePlayer,
+    DraftPick,
 }
