@@ -3,9 +3,9 @@ import MajorLeaguePlayer from './majorLeaguePlayer';
 import MinorLeaguePlayer from './minorLeaguePlayer';
 import Team from './team';
 
-type TradeType = MajorLeaguePlayer | MinorLeaguePlayer | DraftPick
+export type TradeableEntity = MajorLeaguePlayer | MinorLeaguePlayer | DraftPick
 
-export default class TradeItem<T extends TradeType> {
+export default class TradeItem<T extends TradeableEntity> {
     constructor(
         public id: string,
         public tradeEntity: T,
