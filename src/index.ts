@@ -7,7 +7,7 @@ import Trade from './trade'
 import TradeItem from './tradeItem'
 import User from './user'
 
-export default {
+export {
     User,
     Trade,
     TradeItem,
