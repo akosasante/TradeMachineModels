@@ -5,7 +5,8 @@ export type UserStatus = 'active' | 'inactive'
 export default class User {
     constructor(
         public id: string,
-        public password: string,
+        // public password: string,
+        public hasPassword: boolean,
         public displayName: string,
         public email: string,
         public role: Role = 'owner',
@@ -13,7 +14,7 @@ export default class User {
         public slackUsername?: string,
         public lastLoggedIn?: Date
     ) {
-        // TODO: Figure out if hasPassword, passwordRestetExpires/Token, annd userToken are needed here
+        // TODO: Figure out if hasPassword, passwordResetExpires/Token, and userToken are needed here
         // TODO: What about relations?
     }
 
