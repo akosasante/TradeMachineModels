@@ -1,8 +1,8 @@
 {
   "name": "trade-machine-models",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Domain models for trade-machine-server and trade-machine-client",
-  "main": "''",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "test-local": "jest --config jestconfig.json --detectOpenHandles --runInBand --forceExit --verbose true --notify true --collectCoverage true",
