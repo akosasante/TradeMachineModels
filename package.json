@@ -1,6 +1,6 @@
 {
   "name": "trade-machine-models",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Domain models for trade-machine-server and trade-machine-client",
   "main": "lib/index.js",
   "scripts": {
