@@ -1,6 +1,6 @@
 import 'jest'
 import 'jest-extended'
-import User from '../user'
+import User from '../models/user'
 import { createAdminUser, createOwnerUser } from './mocks and factories/mockUserFactory'
 
 describe('User model', () => {

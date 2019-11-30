@@ -1,5 +1,5 @@
 import { name } from 'faker'
-import User from '../../user'
+import User from '../../models/user'
 import { getId } from '../sharedTestFunctions'
 
 const GENERIC_PASSWORD = 'roflpass';

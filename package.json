@@ -21,6 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/akosasante/TradeMachineModels.git"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -42,6 +43,5 @@
   "files": [
     "lib/**/*"
   ],
-  "private": true,
   "dependencies": {}
 }

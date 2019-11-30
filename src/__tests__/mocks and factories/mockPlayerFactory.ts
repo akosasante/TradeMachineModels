@@ -1,6 +1,6 @@
 import { name } from 'faker'
-import MajorLeaguePlayer from '../../majorLeaguePlayer';
-import MinorLeaguePlayer from '../../minorLeaguePlayer';
+import MajorLeaguePlayer from '../../models/majorLeaguePlayer';
+import MinorLeaguePlayer from '../../models/minorLeaguePlayer';
 import { getId } from '../sharedTestFunctions';
 
 const MAJOR_NAME = `${name.findName()}`

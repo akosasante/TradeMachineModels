@@ -1,6 +1,6 @@
 import 'jest'
 import 'jest-extended'
-import Team from '../team';
+import Team from '../models/team';
 import { createEspnTeam } from './mocks and factories/mockTeamFactory';
 
 describe('Team model', () => {

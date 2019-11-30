@@ -1,6 +1,6 @@
 import 'jest'
 import 'jest-extended'
-import MajorLeaguePlayer from '../majorLeaguePlayer';
+import MajorLeaguePlayer from '../models/majorLeaguePlayer';
 import { createMajorLeaguePlayer } from './mocks and factories/mockPlayerFactory';
 
 describe('Major League Player model', () => {

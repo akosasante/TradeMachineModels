@@ -1,6 +1,6 @@
 import 'jest'
 import 'jest-extended'
-import MinorLeaguePlayer from '../minorLeaguePlayer';
+import MinorLeaguePlayer from '../models/minorLeaguePlayer';
 import { createMinorLeaguePlayer } from './mocks and factories/mockPlayerFactory';
 
 describe('Minor League Player model', () => {

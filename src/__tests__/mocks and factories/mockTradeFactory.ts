@@ -1,13 +1,13 @@
-import DraftPick from '../../draftPick';
-import MajorLeaguePlayer from '../../majorLeaguePlayer';
-import MinorLeaguePlayer from '../../minorLeaguePlayer';
-import Trade from '../../trade';
-import TradeItem from '../../tradeItem';
+import DraftPick from '../../models/draftPick';
+import MajorLeaguePlayer from '../../models/majorLeaguePlayer';
+import MinorLeaguePlayer from '../../models/minorLeaguePlayer';
+import Team from '../../models/team';
+import Trade from '../../models/trade';
+import TradeItem from '../../models/tradeItem';
 import { getId } from '../sharedTestFunctions';
 import { createDraftPick } from './mockDraftPickFactory';
 import { createMajorLeaguePlayer, createMinorLeaguePlayer } from './mockPlayerFactory';
 import { createEspnTeam } from './mockTeamFactory';
-import Team from "../../team";
 
 export function createTradedMajorLeaguer(sender?: Team, recipient?: Team): TradeItem<MajorLeaguePlayer> {
     return new TradeItem(getId(), createMajorLeaguePlayer(), sender || createEspnTeam(), recipient || createEspnTeam())

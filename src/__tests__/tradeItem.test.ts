@@ -1,9 +1,9 @@
 import 'jest'
 import 'jest-extended'
-import DraftPick from '../draftPick';
-import MajorLeaguePlayer from '../majorLeaguePlayer';
-import MinorLeaguePlayer from '../minorLeaguePlayer';
-import TradeItem from '../tradeItem';
+import DraftPick from '../models/draftPick';
+import MajorLeaguePlayer from '../models/majorLeaguePlayer';
+import MinorLeaguePlayer from '../models/minorLeaguePlayer';
+import TradeItem from '../models/tradeItem';
 import {
     createInvalidTradeItem,
     createTradedDraftPick,

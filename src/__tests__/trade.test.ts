@@ -1,10 +1,10 @@
 import 'jest'
 import 'jest-extended'
-import DraftPick from '../draftPick';
-import MajorLeaguePlayer from '../majorLeaguePlayer';
-import MinorLeaguePlayer from '../minorLeaguePlayer';
-import Trade from '../trade';
-import TradeItem, { TradeableEntity } from '../tradeItem';
+import DraftPick from '../models/draftPick';
+import MajorLeaguePlayer from '../models/majorLeaguePlayer';
+import MinorLeaguePlayer from '../models/minorLeaguePlayer';
+import Trade from '../models/trade';
+import TradeItem, { TradeableEntity } from '../models/tradeItem';
 import { createTrade } from './mocks and factories/mockTradeFactory';
 
 describe('Trade model', () => {

@@ -1,11 +1,11 @@
-import DraftPick from './draftPick'
-import MajorLeaguePlayer from './majorLeaguePlayer'
-import MinorLeaguePlayer from './minorLeaguePlayer'
-import Player from './player'
-import Team from './team'
-import Trade from './trade'
-import TradeItem from './tradeItem'
-import User from './user'
+import DraftPick from './models/draftPick'
+import MajorLeaguePlayer from './models/majorLeaguePlayer'
+import MinorLeaguePlayer from './models/minorLeaguePlayer'
+import Player from './models/player'
+import Team from './models/team'
+import Trade from './models/trade'
+import TradeItem from './models/tradeItem'
+import User from './models/user'
 
 export {
     User,
