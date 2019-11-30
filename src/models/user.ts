@@ -1,3 +1,5 @@
+import Team from './team';
+
 export type Role = 'admin' | 'owner'
 
 export type UserStatus = 'active' | 'inactive'
@@ -12,11 +14,9 @@ export default class User {
         public role: Role = 'owner',
         public status: UserStatus = 'active',
         public slackUsername?: string,
-        public lastLoggedIn?: Date
-    ) {
-        // TODO: Figure out if hasPassword, passwordResetExpires/Token, and userToken are needed here
-        // TODO: What about relations?
-    }
+        public lastLoggedIn?: Date,
+        public team?: Team
+    ) {}
 
     public toString(): string {
         return `User: ${this.displayName} - ${this.email} (${this.id})`;
